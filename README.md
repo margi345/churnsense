@@ -2,6 +2,7 @@
 
 A production-grade customer churn prediction system built for a telecom company. Predicts which customers will churn, explains why, forecasts when, and generates personalized retention strategies using an LLM pipeline.
 
+**Live Demo:** https://churnsense-app.streamlit.app
 ## The Problem
 
 Telecom companies lose 15–25% of their customer base every year to churn. Acquiring a new customer costs 5–7x more than retaining an existing one. Most churn solutions stop at a prediction score. ChurnSense goes further — it tells the retention team not just who is leaving, but why they are leaving, how long they have left, and exactly what offer to make them.
