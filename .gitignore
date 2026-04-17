@@ -1,0 +1,9 @@
+.env.backup
+.env.backup2
+models/*.parquet
+models/*.joblib
+mlruns/
+*.pyc
+__pycache__/
+.pytest_cache/
+mlflow.db

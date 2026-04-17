@@ -1,0 +1,33 @@
+data:
+  raw_path: data/raw/WA_Fn-UseC_-Telco-Customer-Churn.csv
+  interim_path: data/interim/cleaned.parquet
+  processed_path: data/processed/features.parquet
+  test_size: 0.2
+  random_state: 42
+
+model:
+  name: churnsense-classifier
+  experiment_name: churnsense-experiments
+  optuna_trials: 50
+  cv_folds: 5
+  threshold: 0.45
+
+survival:
+  time_column: tenure
+  event_column: Churn
+  predict_at_days: [30, 60, 90]
+
+shap:
+  max_display: 15
+  n_segments: 4
+
+llm:
+  model: gpt-4o-mini
+  temperature: 0.3
+  max_tokens: 600
+  max_retries: 3
+
+api:
+  host: 0.0.0.0
+  port: 8000
+  timeout: 30
